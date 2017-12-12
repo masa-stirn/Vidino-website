@@ -2,6 +2,71 @@
     margin: 0;
     padding:0;
 }
+        p{
+            display: flex;
+            text-align: center;
+            padding: 1em;
+            padding-top: 1.8em;
+        }
+        .p2{
+            padding-top: 2.3em;
+        }
+        h1{
+            display: flex;
+            color: #C30310;
+            text-align: center;
+            padding-top: 0.5em;
+        }
+        h2{
+            display: flex;
+            text-align: center;
+            padding-top: 2em;
+        }
+        .x1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 60%;
+        }
+        .x2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40%;
+        }
+        .container{
+            display: flex;
+            background-color: white;
+            width: 100vw;
+            height: 250px;
+            -webkit-box-shadow: 0 -8px 15px -6px rgba(0, 0, 0, 0.4);
+	        -moz-box-shadow: 0 -8px 15px -6px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0 -8px 15px -6px rgba(0, 0, 0, 0.4);
+            flex-direction: row;
+            margin-top: 1em;
+        }
+
+        .d-flex{
+            display: flex;
+            align-items: center;
+            margin: 1em;
+            padding-top: 3em;
+        }
+
+        .arrow-d{
+            height: 30px;
+
+        }
+        .arrow-d2{
+            transform:rotate(180deg);
+            height: 30px;
+        }
+        .person{
+            height: 65px;
+            padding: 0.7em;
+        }
+
+
 body, html {
     height: 350vh;
     font-family: "Lao MN";
@@ -46,14 +111,15 @@ svg {
 .text2 {
     display: flex;
     padding: 2em;
-    height:100px;
-    background-color:red;
+    height:10px;
+    background-color:#C30310;
     font-size:26px;
     color:white;
 }
 
 .parallax2 {
     display: flex;
+    flex-direction: row;
     /* The image used */
     background: #000000;
 
@@ -64,8 +130,9 @@ svg {
 }
 .circle-div{
     display: flex;
-    height: 100%;
-    position: relative
+    width: 50vw;
+    margin-left: 10em;
+    position: relative;
 }
 
 .circle {
@@ -73,8 +140,16 @@ svg {
     background: #ffffff;
     height: 25em;
     width: 25em;
-    margin-left: 10em;
     border-radius: 100%;
+}
+
+.phone {
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
 }
 
 .arrow {
@@ -90,18 +165,56 @@ svg {
     align-self: center;
 }
 
+.div-btn {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 80vh;
+    justify-content: center;
+}
+.btn{
+    width: inherit;
+    display: flex;
+    padding-bottom: 2em;
+}
+
 .parallax3 {
     display: flex;
     /* The image used */
-    background: #d3d3d3;
+    background-image: url("../images/forks.jpg");
 
 	/* Full height */
-    height: 80vh;
+    height: 90vh;
 
     /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer {
     display: flex;
 	height:200px;background-color:black;font-size:26px
+}
+
+@media screen and (max-width:650px) {
+    .circle-div{
+    margin-left: 0em;
+}
+    .circle{
+     top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+    }
+}
+@media screen and (max-width:480px) {
+
+    .circle {
+    height: 20em;
+    width: 20em;
+}
+
 }
