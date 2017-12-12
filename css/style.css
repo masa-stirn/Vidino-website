@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body, html {
+    height: 350vh;
+    font-family: "Lao MN";
+    font-weight: 300;
+    font-size:20px;
+}
+
+svg {
+    display: flex;
+    width: 4em;
+    height: 4em;
+    margin: 1em;
+    float: right;
+}
+
+.parallax {
+    display: flex;
+    justify-content: flex-end;
+    /* The image used */
+    background-image: url("../images/dinning-table_2500x1159.jpg");
+
+    /* Full height */
+    height: 80vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text1 {
+    display: flex;
+    padding: 2em;
+    padding-bottom:0;
+    height:100px;
+    background-color:black;
+    font-size:26px;
+    color:white;
+}
+
+.text2 {
+    display: flex;
+    padding: 2em;
+    height:100px;
+    background-color:red;
+    font-size:26px;
+    color:white;
+}
+
+.parallax2 {
+    display: flex;
+    /* The image used */
+    background: #000000;
+
+	/* Full height */
+    height: 80vh;
+
+    /* Create the parallax scrolling effect */
+}
+.circle-div{
+    display: flex;
+    height: 100%;
+    position: relative
+}
+
+.circle {
+    position: absolute;
+    background: #ffffff;
+    height: 25em;
+    width: 25em;
+    margin-left: 10em;
+    border-radius: 100%;
+}
+
+.arrow {
+    height: 4em;
+    display: flex;
+    align-self: center;
+}
+
+.arrow2 {
+    transform: rotate(180deg);
+    height: 4em;
+    display: flex;
+    align-self: center;
+}
+
+.parallax3 {
+    display: flex;
+    /* The image used */
+    background: #d3d3d3;
+
+	/* Full height */
+    height: 80vh;
+
+    /* Create the parallax scrolling effect */
+}
+
+footer {
+    display: flex;
+	height:200px;background-color:black;font-size:26px
+}
