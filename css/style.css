@@ -1,13 +1,14 @@
 @import url(../fonts/Lao-MN.ttc);
-
 @font-face {
-  font-family: 'Lao MN';
-  src: url('Lao-MN.eot'); /* IE9 Compat Modes */
-  src: url('Lao-MN.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('Lao-MN.woff2') format('woff2'), /* Super Modern Browsers */
-       url('Lao-MN.woff') format('woff'), /* Pretty Modern Browsers */
-       url('Lao-MN.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('Lao-MN.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-family: 'Lao MN';
+    src: url('Lao-MN.eot');
+    /* IE9 Compat Modes */
+    src: url('Lao-MN.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('Lao-MN.woff2') format('woff2'), /* Super Modern Browsers */
+    url('Lao-MN.woff') format('woff'), /* Pretty Modern Browsers */
+    url('Lao-MN.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('Lao-MN.svg#svgFontName') format('svg');
+    /* Legacy iOS */
 }
 
 * {
@@ -24,11 +25,14 @@ html {
 }
 
 svg {
+
     display: flex;
     width: 4em;
     height: 4em;
     margin: 1em;
-    float: right;
+    position: absolute;
+    right:0;
+    z-index: 1000;
 }
 
 .parallax {
@@ -45,14 +49,34 @@ svg {
     background-size: cover;
 }
 
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+}
+
 .text1 {
     display: flex;
-    padding: 2em;
-    padding-bottom: 0;
     height: 100px;
     background-color: black;
     font-size: 26px;
     color: white;
+}
+
+h4{
+    font-size: 30px;
+    font-weight: 300;
+    padding: 1em;
+    align-self: center;
+    align-items: center;
 }
 
 .parallax2 {
@@ -89,6 +113,24 @@ svg {
     margin: auto;
 }
 
+.phone-clip {
+    display: flex;
+    position: relative;
+    margin-top: 5em;
+}
+
+.short-clip {
+    position: relative;
+    width: 145px;
+    height: 260px;
+    margin-left: 176px;
+    display: block;
+    align-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-bottom: 10px solid black;
+}
+
 .arrow {
     height: 4em;
     display: flex;
@@ -117,7 +159,7 @@ svg {
     cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
     opacity: 0.8;
 }
 
@@ -151,23 +193,30 @@ h1 {
     text-align: center;
     padding-top: 0.5em;
 }
+
 h2 {
     display: flex;
     text-align: center;
-    padding-top: 2.4em;
+    padding-top: 2.6em;
     font-size: 1.1em;
 }
+
 .x1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 60%;
 }
+
 .x2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 40%;
+}
+
+.div-cont {
+    height: 40vh;
 }
 
 .container {
@@ -189,6 +238,10 @@ h2 {
     padding-top: 3em;
 }
 
+.line {
+    margin-top: 1.5em;
+}
+
 .arrow-d {
     height: 30px;
 }
@@ -205,9 +258,8 @@ h2 {
 
 .text2 {
     display: flex;
-    padding: 2em;
-    height: 10px;
-    background-color: #C30310;
+    height: 100px;
+    background-color: #6e8255;
     font-size: 26px;
     color: white;
 }
@@ -217,33 +269,38 @@ footer {
     flex-direction: column;
     height: 200px;
     background-color: black;
-    font-size: 26px
+    font-size: 26px;
 }
 
-.foot-logo{
+.foot-logo {
     height: 80px;
     display: flex;
     justify-content: center;
 }
-.logo-footer{
+
+.logo-footer {
     padding-top: 1em;
     height: 40px;
 }
-.icons-container{
-        display: flex;
+
+.icons-container {
+    display: flex;
     align-self: center;
 }
-.social{
+
+.social {
     height: 80px;
     display: flex;
-        justify-content: center;
+    justify-content: center;
 }
-.social-icons{
+
+.social-icons {
     height: 25px;
     padding: 1em;
     cursor: pointer;
 }
-.social-icons:hover{
+
+.social-icons:hover {
     opacity: 0.6;
 }
 
@@ -254,26 +311,86 @@ footer p {
     display: block;
     padding: 0;
 }
-.phone-clip{
-    display: flex;
-    position: relative;
-    margin-top: 5em;
-    
-}
-.short-clip{
-    position: relative;
-    width: 145px;
-    height: 260px;
-    margin-left: 176px;
-    display: block;
-    align-content: center;
-    align-items: center;
-    border: 2px solid black;
-    border-bottom: 10px solid black;
-}
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:1000px) {
+    .text1, .text2{
+        height: 150px;
+    }
+    .div-cont {
+        height: 80vh;
+    }
+    .container {
+        display: block;
+        width: 100%;
+    }
+    .x1 {
+        width: 100%;
+        height: 300px;
+    }
+    .x2 {
+        width: 100%;
+        height: 320px;
+        padding-top: 2.5em;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1em;
+    }
+    .d-flex {
+        padding: 5em 0em 2em 0em;
+    }
+    .line {
+        display: none;
+    }
+    p {
+        display: flex;
+        text-align: center;
+        padding: 1em;
+        padding-top: 1.8em;
+    }
+    .p2 {
+        padding-top: 1.3em;
+    }
+    .parallax2 {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* The image used */
+        background: #000000;
+        /* Full height */
+        height: 100vh;
+    }
     .circle-div {
+        display: block;
+        width: 100vw;
+        height: 100%;
+        margin-left: 0;
+        position: relative;
+    }
+    .circle {
+        position: absolute;
+        background: #ffffff;
+        height: 25em;
+        width: 25em;
+        border-radius: 100%;
+        justify-content: flex-end;
+        align-self: center;
+    }
+    .div-btn {
+        display: flex;
+        width: 100vw;
+        height: 30vh;
+        align-self: center;
+        margin-top: 5em;
+    }
+    .btn {
+        padding-bottom: 1.5em;
+        cursor: pointer;
+        align-self: center;
+    }
+     .circle-div {
         margin-left: 0em;
     }
     .circle {
@@ -284,24 +401,44 @@ footer p {
         margin: auto;
     }
 }
-
 @media only screen and (max-width:480px) {
+    .circle-div{
+        height: 80%;
+    }
     .circle {
+        margin-top: 2em;
         height: 20em;
         width: 20em;
+        margin-bottom: 1em;
     }
-    .parallax, .parallax2, .parallax3 {
+    .parallax,
+    .parallax2,
+    .parallax3 {
         background-attachment: scroll;
     }
-    .text1, .text2 {
-        height: 150px;
+    .div-cont {
+        height: 90vh;
     }
-    
+    .text2, .text1 {
+        height: 220px;
+    }
+    .d-flex {
+        padding: 6.5em 0em 1em 0em;
+    }
+    .div-btn {
+        margin-top: 0;
+    }
     .short-clip{
-        margin-left: 127px;
-        margin-top: 1px;
+        position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     }
-    .phone-clip{
-        margin-top: 3em;
+    .phone-clip {
+        height: inherit;
+        justify-content: center;
+        margin-top: 0em;
     }
 }
