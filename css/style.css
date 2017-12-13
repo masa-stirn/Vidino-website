@@ -209,6 +209,7 @@ h2 {
     display: flex;
     text-align: center;
     font-size: 1.1em;
+    justify-content: center;
 }
 
 .x1 {
@@ -267,6 +268,10 @@ h2 {
 .person {
     height: 65px;
     padding: 0.7em;
+}
+
+.active{
+    height: 90px;
 }
 
 .text2 {
@@ -344,6 +349,7 @@ footer p {
     }
     h2{
         margin-top: 1em;
+        justify-content: center;
     }
     .d-flex {
         padding: 0em 0em 2em 0em;

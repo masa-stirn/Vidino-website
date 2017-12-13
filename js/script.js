@@ -1,39 +1,28 @@
-let name1 = document.querySelector('.name1');
-let name2 = document.querySelector('.name2');
-let name3 = document.querySelector('.name3');
-let p1 = document.querySelector('.p1');
-let p2 = document.querySelector('.p2');
-let p3 = document.querySelector('.p3');
-let arrowL = document.querySelector('.arrow-d');
-let arrowR = document.querySelector('.arrow-d2');
-let masa = document.querySelector(".masa");
-let alex = document.querySelector(".alex");
-let george = document.querySelector(".george");
 
+var slideIndex = 2;
+showDivs(slideIndex);
 
-alex.addEventListener("click", function(){
-    name1.classList.add("hide");
-    p1.classList.add("hide");
-    name2.classList.add("hide");
-    p2.classList.add("hide");
-    name3.classList.remove("hide");
-    p3.classList.remove("hide");
-});
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
 
-masa.addEventListener("click", function(){
-    name1.classList.remove("hide");
-    p1.classList.remove("hide");
-    name2.classList.add("hide");
-    p2.classList.add("hide");
-    name3.classList.add("hide");
-    p3.classList.add("hide");
-});
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
 
-george.addEventListener("click", function(){
-    name1.classList.add("hide");
-    p1.classList.add("hide");
-    name2.classList.remove("hide");
-    p2.classList.remove("hide");
-    name3.classList.add("hide");
-    p3.classList.add("hide");
-});
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("txt");
+  var dots = document.getElementsByClassName("person");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" active", "");
+  }
+x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
