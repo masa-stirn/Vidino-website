@@ -1,13 +1,13 @@
 @import url(../fonts/Lao-MN.ttc);
 @font-face {
     font-family: 'Lao MN';
-    src: url('Lao-MN.eot');
+    src: url('../fonts/laomn.eot');
     /* IE9 Compat Modes */
-    src: url('Lao-MN.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('Lao-MN.woff2') format('woff2'), /* Super Modern Browsers */
-    url('Lao-MN.woff') format('woff'), /* Pretty Modern Browsers */
-    url('Lao-MN.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('Lao-MN.svg#svgFontName') format('svg');
+    src: url('../fonts/laomn.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/laomn.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/laomn.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/laomn.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/laomn.svg#svgFontName') format('svg');
     /* Legacy iOS */
 }
 
@@ -37,6 +37,14 @@ svg {
     position: absolute;
     right:0;
     z-index: 1000;
+}
+
+.blecky {
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    bottom:0;
 }
 
 .parallax {
@@ -90,7 +98,7 @@ h4{
     /* The image used */
     background: #000000;
     /* Full height */
-    height: 80vh;
+    min-height: 500px;
     /* Create the parallax scrolling effect */
 }
 
@@ -153,7 +161,6 @@ h4{
     display: flex;
     flex-direction: column;
     width: 20vw;
-    height: 80vh;
     justify-content: center;
 }
 
@@ -219,7 +226,7 @@ h2 {
 }
 
 .div-cont {
-    height: 40vh;
+    margin-bottom: 1em;
 }
 
 .hide {
