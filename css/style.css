@@ -254,7 +254,23 @@ footer p {
     display: block;
     padding: 0;
 }
-
+.phone-clip{
+    display: flex;
+    position: relative;
+    margin-top: 5em;
+    
+}
+.short-clip{
+    position: relative;
+    width: 145px;
+    height: 260px;
+    margin-left: 176px;
+    display: block;
+    align-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-bottom: 10px solid black;
+}
 
 @media screen and (max-width:650px) {
     .circle-div {
@@ -278,5 +294,14 @@ footer p {
         background-attachment: scroll;
     }
     .text1, .text2 {
-        height: 150px;}
+        height: 150px;
+    }
+    
+    .short-clip{
+        margin-left: 127px;
+        margin-top: 1px;
+    }
+    .phone-clip{
+        margin-top: 3em;
+    }
 }
