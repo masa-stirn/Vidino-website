@@ -1,77 +1,26 @@
-*{
-    margin: 0;
-    padding:0;
+@import url(../fonts/Lao-MN.ttc);
+
+@font-face {
+  font-family: 'Lao MN';
+  src: url('Lao-MN.eot'); /* IE9 Compat Modes */
+  src: url('Lao-MN.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Lao-MN.woff2') format('woff2'), /* Super Modern Browsers */
+       url('Lao-MN.woff') format('woff'), /* Pretty Modern Browsers */
+       url('Lao-MN.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Lao-MN.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
-        p{
-            display: flex;
-            text-align: center;
-            padding: 1em;
-            padding-top: 1.8em;
-        }
-        .p2{
-            padding-top: 2.3em;
-        }
-        h1{
-            display: flex;
-            color: #C30310;
-            text-align: center;
-            padding-top: 0.5em;
-        }
-        h2{
-            display: flex;
-            text-align: center;
-            padding-top: 2em;
-        }
-        .x1{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 60%;
-        }
-        .x2{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 40%;
-        }
-        .container{
-            display: flex;
-            background-color: white;
-            width: 100vw;
-            height: 250px;
-            -webkit-box-shadow: 0 -8px 15px -6px rgba(0, 0, 0, 0.4);
-	        -moz-box-shadow: 0 -8px 15px -6px rgba(0, 0, 0, 0.4);
-	        box-shadow: 0 -8px 15px -6px rgba(0, 0, 0, 0.4);
-            flex-direction: row;
-            margin-top: 1em;
-        }
 
-        .d-flex{
-            display: flex;
-            align-items: center;
-            margin: 1em;
-            padding-top: 3em;
-        }
+* {
+    margin: 0;
+    padding: 0;
+}
 
-        .arrow-d{
-            height: 30px;
-
-        }
-        .arrow-d2{
-            transform:rotate(180deg);
-            height: 30px;
-        }
-        .person{
-            height: 65px;
-            padding: 0.7em;
-        }
-
-
-body, html {
+body,
+html {
     height: 350vh;
-    font-family: "Lao MN";
+    font-family: "Lao MN", sans-serif;
     font-weight: 300;
-    font-size:20px;
+    font-size: 20px;
 }
 
 svg {
@@ -87,10 +36,8 @@ svg {
     justify-content: flex-end;
     /* The image used */
     background-image: url("../images/dinning-table_2500x1159.jpg");
-
     /* Full height */
     height: 80vh;
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -101,20 +48,11 @@ svg {
 .text1 {
     display: flex;
     padding: 2em;
-    padding-bottom:0;
-    height:100px;
-    background-color:black;
-    font-size:26px;
-    color:white;
-}
-
-.text2 {
-    display: flex;
-    padding: 2em;
-    height:10px;
-    background-color:#C30310;
-    font-size:26px;
-    color:white;
+    padding-bottom: 0;
+    height: 100px;
+    background-color: black;
+    font-size: 26px;
+    color: white;
 }
 
 .parallax2 {
@@ -122,13 +60,12 @@ svg {
     flex-direction: row;
     /* The image used */
     background: #000000;
-
-	/* Full height */
+    /* Full height */
     height: 80vh;
-
     /* Create the parallax scrolling effect */
 }
-.circle-div{
+
+.circle-div {
     display: flex;
     width: 50vw;
     margin-left: 10em;
@@ -145,10 +82,10 @@ svg {
 
 .phone {
     position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     margin: auto;
 }
 
@@ -172,7 +109,8 @@ svg {
     height: 80vh;
     justify-content: center;
 }
-.btn{
+
+.btn {
     width: inherit;
     display: flex;
     padding-bottom: 2em;
@@ -182,10 +120,8 @@ svg {
     display: flex;
     /* The image used */
     background-image: url("../images/forks.jpg");
-
-	/* Full height */
+    /* Full height */
     height: 90vh;
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -193,28 +129,147 @@ svg {
     background-size: cover;
 }
 
+p {
+    display: flex;
+    text-align: center;
+    padding: 1em;
+    padding-top: 1.8em;
+}
+
+.p2 {
+    padding-top: 2.3em;
+}
+
+h1 {
+    display: flex;
+    color: #C30310;
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+h2 {
+    display: flex;
+    text-align: center;
+    padding-top: 2em;
+}
+
+.x1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.x2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    width: 100vw;
+    height: 250px;
+    -webkit-box-shadow: 0 -8px 15px -6px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 -8px 15px -6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 -8px 15px -6px rgba(0, 0, 0, 0.4);
+    flex-direction: row;
+    margin-top: 1em;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    margin: 1em;
+    padding-top: 3em;
+}
+
+.arrow-d {
+    height: 30px;
+}
+
+.arrow-d2 {
+    transform: rotate(180deg);
+    height: 30px;
+}
+
+.person {
+    height: 65px;
+    padding: 0.7em;
+}
+
+.text2 {
+    display: flex;
+    padding: 2em;
+    height: 10px;
+    background-color: #C30310;
+    font-size: 26px;
+    color: white;
+}
+
 footer {
     display: flex;
-	height:200px;background-color:black;font-size:26px
+    flex-direction: column;
+    height: 200px;
+    background-color: black;
+    font-size: 26px
 }
+
+.foot-logo{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+.logo-footer{
+    padding-top: 1em;
+    height: 40px;
+}
+.icons-container{
+        display: flex;
+    align-self: center;
+}
+.social{
+    height: 80px;
+    display: flex;
+        justify-content: center;
+}
+.social-icons{
+    height: 25px;
+    padding: 1em;
+}
+
+footer p {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    padding: 0;
+}
+
 
 @media screen and (max-width:650px) {
-    .circle-div{
-    margin-left: 0em;
-}
-    .circle{
-     top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    margin: auto;
+    .circle-div {
+        margin-left: 0em;
+    }
+    .circle {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 }
-@media screen and (max-width:480px) {
 
+@media only screen and (max-width:480px) {
     .circle {
-    height: 20em;
-    width: 20em;
-}
-
+        height: 20em;
+        width: 20em;
+    }
+    .parallax, .parallax2, .parallax3 {
+        background-attachment: scroll;
+    }
+    .text1, .text2 {
+        height: 150px;}
 }
