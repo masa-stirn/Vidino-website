@@ -24,6 +24,10 @@ html {
     font-size: 20px;
 }
 
+p {
+    font-family: sans-serif;
+}
+
 svg {
 
     display: flex;
@@ -77,6 +81,7 @@ h4{
     padding: 1em;
     align-self: center;
     align-items: center;
+    font-family: sans-serif;
 }
 
 .parallax2 {
@@ -178,13 +183,11 @@ h4{
 
 p {
     display: flex;
-    text-align: center;
-    padding: 1em;
-    padding-top: 1.8em;
+    padding: 0.5em 1em 0em 1em;
 }
 
 .p2 {
-    padding-top: 2.3em;
+    padding-top: 2em;
 }
 
 h1 {
@@ -192,12 +195,12 @@ h1 {
     color: #C30310;
     text-align: center;
     padding-top: 0.5em;
+    font-size: 1.5em;
 }
 
 h2 {
     display: flex;
     text-align: center;
-    padding-top: 2.6em;
     font-size: 1.1em;
 }
 
@@ -219,23 +222,26 @@ h2 {
     height: 40vh;
 }
 
+.hide {
+    display: none;
+}
+
 .container {
     display: flex;
     background-color: white;
     width: 100vw;
-    height: 250px;
-    -webkit-box-shadow: 0 -8px 15px -6px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 0 -8px 15px -6px rgba(0, 0, 0, 0.4);
-    box-shadow: 0 -8px 15px -6px rgba(0, 0, 0, 0.4);
+    height: auto;
+    -webkit-box-shadow: 0 8px 15px -6px rgba(0, 0, 0, 0.4) inset;
+    -moz-box-shadow: 0 8px 15px -6px rgba(0, 0, 0, 0.4) inset;
+    box-shadow: 0 8px 15px -6px rgba(0, 0, 0, 0.4) inset;
     flex-direction: row;
-    margin-top: 1em;
+    padding-top: 1em;
 }
 
 .d-flex {
     display: flex;
     align-items: center;
-    margin: 1em;
-    padding-top: 3em;
+    height: auto;
 }
 
 .line {
@@ -312,6 +318,8 @@ footer p {
     padding: 0;
 }
 
+
+
 @media screen and (max-width:1000px) {
     .text1, .text2{
         height: 150px;
@@ -325,21 +333,17 @@ footer p {
     }
     .x1 {
         width: 100%;
-        height: 300px;
+        height: 350px;
     }
     .x2 {
         width: 100%;
-        height: 320px;
-        padding-top: 2.5em;
+        height: 330px;
     }
-    h1 {
-        font-size: 1.5em;
-    }
-    p {
-        font-size: 1em;
+    h2{
+        margin-top: 1em;
     }
     .d-flex {
-        padding: 5em 0em 2em 0em;
+        padding: 0em 0em 2em 0em;
     }
     .line {
         display: none;
@@ -348,10 +352,10 @@ footer p {
         display: flex;
         text-align: center;
         padding: 1em;
-        padding-top: 1.8em;
+        padding-bottom: 1em;
     }
     .p2 {
-        padding-top: 1.3em;
+        padding-top: 1em;
     }
     .parallax2 {
         align-items: center;
