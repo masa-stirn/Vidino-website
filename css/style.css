@@ -417,8 +417,8 @@ footer p {
 @media only screen and (max-width:480px) {
     .circle {
         margin-top: 2em;
-        height: 20em;
-        width: 20em;
+        height: 18em;
+        width: 18em;
         margin-bottom: 1em;
     }
     .parallax,
@@ -430,7 +430,7 @@ footer p {
         height: 220px;
     }
     .d-flex {
-        padding: 6.5em 0em 1em 0em;
+        padding: 0em 0em 1em 0em;
     }
     .div-btn {
         margin-top: 0;
@@ -447,5 +447,27 @@ footer p {
         height: inherit;
         justify-content: center;
         margin-top: 0em;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .parallax2{
+        background: white;
+    }
+    .circle-div{
+        margin-top:5em;
+            height: 450px;
+    }
+    .circle {
+        height: 12em;
+        width: 12em;
+    }
+    .person {
+        height: 45px;}
+    .active{
+    height: 60px;
+}
+    h2{
+        margin-top: 2em;
     }
 }
